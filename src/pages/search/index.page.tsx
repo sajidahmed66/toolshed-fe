@@ -1,23 +1,11 @@
-import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import Navbar from "@/components/common/ui/nav-bar";
+import { FC } from "react";
 
 const SearchPage: FC = () => {
   return (
     <>
       {/* navbar */}
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Toolshed</a>
-        </div>
-        <div className="flex-none gap-2">
-          <Link
-            to="/inventory-list"
-            className="btn btn-primary rounded-lg text-white"
-          >
-            inventory
-          </Link>
-        </div>
-      </div>
+      <Navbar />
       {/* search component */}
       <div className="flex flex-row items-center justify-center gap-4">
         <div className="form-control">

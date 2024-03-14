@@ -1,23 +1,9 @@
-import { Link } from "react-router-dom";
+import Navbar from "@/components/common/ui/nav-bar";
 
 const AddToolsPage = () => {
   return (
     <>
-      <div className="navbar bg-base-100 shadow ">
-        <div className="flex-1">
-          <Link to="/" className="btn btn-ghost text-xl">
-            Toolshed
-          </Link>
-        </div>
-        <div className="flex-none gap-2">
-          <Link
-            to="/inventory-list"
-            className="btn btn-primary  rounded-lg text-white"
-          >
-            Add Tools
-          </Link>
-        </div>
-      </div>
+      <Navbar />
       <div className="px-8 py-12 w-full max-w-7xl mx-auto">
         <>
           <div className="text-base breadcrumbs pb-6">

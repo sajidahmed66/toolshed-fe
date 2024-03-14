@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import SearchPage from "@/pages/search/index.page";
-import InventoryListingPage from "./pages/inventory/index.page";
-import AddToolsPage from "./pages/inventory/add.page";
+import InventoryListingPage from "@/pages/inventory/index.page";
+import AddToolsPage from "@/pages/inventory/add.page";
+import EditPage from "@/pages/inventory/edit.page";
 //
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "inventory/edit",
-    element: <></>,
+    element: <EditPage />,
   },
 ]);
 //
