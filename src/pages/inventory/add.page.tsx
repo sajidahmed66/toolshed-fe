@@ -1,4 +1,5 @@
 import Navbar from "@/components/common/ui/nav-bar";
+import ToolForm from "@/components/form/tool-form";
 
 const AddToolsPage = () => {
   return (
@@ -49,38 +50,7 @@ const AddToolsPage = () => {
           </div>
         </>
         {/* form */}
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
-          className="flex flex-col gap-2"
-        >
-          <label className="input input-bordered flex items-center gap-2">
-            Name
-            <input type="text" className="grow" placeholder="Daisy" />
-          </label>
-
-          <label className="input input-bordered flex items-center gap-2">
-            Category
-            <input type="text" className="grow" placeholder="Daisy" />
-          </label>
-
-          <label className="input input-bordered flex items-center gap-2">
-            Location
-            <input type="text" className="grow" placeholder="Daisy" />
-          </label>
-          {/*  */}
-          <label className="form-control w-full max-w-xs">
-            <input
-              type="file"
-              className="file-input file-input-bordered w-full max-w-xs"
-            />
-          </label>
-
-          <button className="w-32 btn btn-primary rounded" type="submit">
-            Submit
-          </button>
-        </form>
+        <ToolForm />
       </div>
     </>
   );
